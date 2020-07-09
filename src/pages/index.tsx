@@ -3,6 +3,7 @@ import Head from "next/head";
 type Props = {
   title: String
 }
+
 export default function Home({title = "React Avançado"}: Props ){
   return (
     <div className="container">
