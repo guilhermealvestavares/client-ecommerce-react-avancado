@@ -1,7 +1,7 @@
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 
-import GlobalStyles from '../styles/global'
+import GlobalStyles from 'styles/global'
 
 function App({ Component, pageProps }: AppProps) {
   return (
@@ -12,8 +12,8 @@ function App({ Component, pageProps }: AppProps) {
         <link rel="apple-touch-icon" href="/img/icon0512.png" />
         <meta name="description" content="Curso de React" />
       </Head>
-      <Component {...pageProps} />
       <GlobalStyles />
+      <Component {...pageProps} />
     </>
   )
 }
